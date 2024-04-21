@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge and Download MP4</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-wrapper">
+            <img class="logo" src="./img/cyber-punk.png" alt="logo">
+        </div>
+        <div class="nav-title">Download .M3U8 File To Local</div>
+    </nav>
+    <main>
+        <div class="req-wrapper">
+            <div class="request-info">0 Request</div>
+        </div>
+        
+        <div class="input-container">
+            <label for="startBaseURL">Start Base URL:</label>
+            <input type="text" id="startBaseURL" value="" placeholder="Paste the start base url: https://xxxxxxxxxxxxxx" />
+            <div id="clipbaord-start-paste"></div>
+            <div id="clipbaord-start-delete"></div>
+        </div>
+        <br>
+        <div class="input-container">
+            <label for="endBaseURL">End Base URL:</label>
+            <input type="text" id="endBaseURL" value="" placeholder="Paste the end base url: https://xxxxxxxxxxxxxx" />
+            <div id="clipbaord-end-paste"></div>
+            <div id="clipbaord-end-delete"></div>
+        </div>
+        <br>
+        <label for="baseURL">Base URL:</label>
+        <input type="text" id="baseURL" value="" placeholder="Show the base url: https://xxxxxxxxxxxxxx" disabled />
+        <br>
+        <label for="startRange">Start Range: </label>
+        <input type="number" id="startRange" value="" placeholder="Show start range : 0" disabled />
+        <br>
+        <label for="endRange">End Range: </label>
+        <input type="number" id="endRange" value="" placeholder="Show end range : 74" disabled />
+        <br>
+        <div class="dload-btn">
+            <button id="downloadButton">Download Merged MP4</button>
+        </div>
+
+    </main>
+
+
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
