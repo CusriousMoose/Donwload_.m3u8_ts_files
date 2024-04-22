@@ -135,6 +135,8 @@ function saveBlobToFile(blob, fileName) {
     a.click();
     window.URL.revokeObjectURL(url);
     document.body.removeChild(a);
+    document.getElementById("startBaseURL").value = "";
+    document.getElementById("endBaseURL").value = "";
 }
 
 function fetchAndMerge() {
