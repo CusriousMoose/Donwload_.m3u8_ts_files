@@ -137,6 +137,10 @@ function saveBlobToFile(blob, fileName) {
     document.body.removeChild(a);
     document.getElementById("startBaseURL").value = "";
     document.getElementById("endBaseURL").value = "";
+    document.getElementById("baseURL").value = "";
+    document.getElementById("startRange").value = "";
+    document.getElementById("endRange").value = "";
+    document.querySelector(".request-info").textContent = `0 Request`;
 }
 
 function fetchAndMerge() {
