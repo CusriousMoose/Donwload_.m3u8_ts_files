@@ -63,8 +63,8 @@ function generateSequenceURLs(api1, api2) {
     while (i < api1.length && i < api2.length && api1[i] === api2[i]) {
         i++;
     }
-    const commonPrefix = api1.substring(0, i);
-
+    var commonPrefix = api1.substring(0, i);
+    commonPrefix = commonPrefix.replace(/\/360p\//, "/720p/");
     // Extract the unmatched parts of the URLs
     const unmatchedPart1 = api1.substring(i);
     const unmatchedPart2 = api2.substring(i);
