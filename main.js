@@ -105,26 +105,7 @@ function generateSequenceURLs(api1, api2) {
 
 
 function fetchAndSaveData(url, index) {
-        const headers = {
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
-        'DNT': '1',
-        'Host': 'appx-transcoded-videos.livelearn.in',
-        'Origin': 'https://amansirenglish.classx.co.in',
-        'Pragma': 'no-cache',
-        'Referer': 'https://amansirenglish.classx.co.in/',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'cross-site',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-        'sec-ch-ua': '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
-        'sec-ch-ua-mobile': '?0',
-        'sec-ch-ua-platform': '"Windows"'
-    };
-    return fetch(url,{headers})
+    return fetch(url)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to fetch data from ${url}`);
