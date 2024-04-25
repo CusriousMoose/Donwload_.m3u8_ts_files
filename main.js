@@ -85,7 +85,7 @@ function generateSequenceURLs(api1, api2) {
     const urls = [];
     var count=0;
     for (let j = minNumber; j <= maxNumber; j++) {
-        urls.push(`${commonPrefix}${j}.ts`);
+        urls.push(`${commonPrefix}${j}.tsb`);
         count++;
     }
     document.getElementById("baseURL").value = commonPrefix;
